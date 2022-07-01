@@ -16,13 +16,13 @@ To enable Oracle connectivity, download Oracle's freely available OCI drivers fr
 
 For Linux, if the Oracle instant client that you've downloaded does not include the `libclntsh.so` library, you must create a symbolic link named `libclntsh.so` that points to the downloaded version. Navigate to the instant client directory and execute the following command:
 
-```text
+```shell
 ln -s libclntsh.so.<version> libclntsh.so
 ```
 
 Where `version` is the version number of the `libclntsh.so` library. For example:
 
-```text
+```shell
 ln -s libclntsh.so.12.1 libclntsh.so
 ```
 
@@ -35,7 +35,7 @@ Alternatively, you can also set the value of the `oracle_home` configuration par
 
 To set the `oracle_home` configuration parameter in the `postgresql.conf` file, edit the file, adding the following line:
 
-```text
+```ini
 oracle_home = 'lib_directory'
 ```
 
