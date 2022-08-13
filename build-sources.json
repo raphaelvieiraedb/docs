@@ -23,6 +23,7 @@
   "ocl_connector": true,
   "odbc_connector": true,
   "pem": true,
+  "pg_extensions": true,
   "pgbouncer": true,
   "pglogical": true,
   "pgpool": true,
