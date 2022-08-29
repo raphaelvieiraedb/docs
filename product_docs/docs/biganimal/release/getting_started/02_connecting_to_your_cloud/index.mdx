@@ -26,6 +26,10 @@ Before connecting to your cloud,
     - arn:aws:iam::aws:policy/IAMFullAccess
 
     - arn:aws:iam::aws:policy/ServiceQuotasFullAccess
+
+   BigAnimal uses a custom role to provision infrastructure in your AWS cloud account. This role includes permissions for:
+
+   
     
  - **If connecting to an Azure subscription, ensure that:** 
  
@@ -35,14 +39,19 @@ Before connecting to your cloud,
 
     - Privileged Role Administrator
 
+   BigAnimal uses a custom role to provision infrastructure in your Azure cloud account. This role includes permissions for:
+
+    - Alerts management, insights, and operational insights in order to manage logs and telemetry
+    - Storage, compute, network, ContainerInstance, in order to host the database instances
+    - Capacity in order to adjust the fleet size as needed
+
  - In [Azure Cloud Shell](https://shell.azure.com/) or [AWS Cloud Shell](https://console.aws.amazon.com/cloudshell), ensure that your environment is running: 
 
       - bash shell version 4.0 or above. 
-
       - [jq](https://stedolan.github.io/jq/) JSON parser.
       - BigAnimal CLI version 1.4 or later. For detailed steps, see [Installing the CLI](../../reference/cli/#installing-the-cli).
 
- - Ensure that the BigAnimal login user running the CLI is assigned either the owner or the contributor role.
+ - Ensure that the BigAnimal login user running the CLI is assigned either the owner or the contributor role. 
 
 Perform the following steps:
 
