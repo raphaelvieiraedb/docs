@@ -18,7 +18,6 @@ const sourceFilename = isBuild ? "build-sources.json" : "dev-sources.json";
 const sourceToPluginConfig = {
   ark: { name: "ark", path: "product_docs/docs/ark" },
   bart: { name: "bart", path: "product_docs/docs/bart" },
-  bdr: { name: "bdr", path: "product_docs/docs/bdr" },
   biganimal: { name: "biganimal", path: "product_docs/docs/biganimal" },
   postgres_for_kubernetes: {
     name: "postgres_for_kubernetes",
@@ -33,7 +32,6 @@ const sourceToPluginConfig = {
     name: "hadoop_data_adapter",
     path: "product_docs/docs/hadoop_data_adapter",
   },
-  harp: { name: "harp", path: "product_docs/docs/harp" },
   jdbc_connector: {
     name: "jdbc_connector",
     path: "product_docs/docs/jdbc_connector",
